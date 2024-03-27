@@ -905,6 +905,7 @@ def start_mavproxy(opts, stuff):
         cmd.extend(["--load-module", "tracker"])
         global tracker_serial0
         # tracker_serial0 is set when we start the tracker...
+        # PROBLEM
         extra_cmd += ("module load map;"
                       "tracker set port %s; "
                       "tracker start; "
